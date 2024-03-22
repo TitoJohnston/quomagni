@@ -1,0 +1,62 @@
+{
+  "name": "quomagni",
+  "description": "Cardano development utilities and wrappers",
+  "version": "1.0.0",
+  "author": "EttieJerde",
+  "homepage": "https://github.com/TitoJohnston/quomagni.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TitoJohnston/quomagni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TitoJohnston/quomagni.git/issues"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/adalib.js",
+  "module": "./dist/adalib.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build && tsc --emitDeclarationOnly",
+    "test": "vitest",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.ts",
+    "prettier": "prettier --check .",
+    "format": "prettier --check . -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "consequatur",
+    "sit",
+    "web3",
+    "crypto",
+    "walletconnect"
+  ],
+  "dependencies": {
+    "@cardano-foundation/cardano-connect-with-wallet": "0.1.45",
+    "@walletconnect/universal-provider": "^2.7.0",
+    "@web3modal/standalone": "2.3.7",
+    "bs58": "5.0.0",
+    "buffer": "^6.0.3",
+    "valtio": "1.7.0"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@typescript-eslint/eslint-plugin": "5.40.0",
+    "@typescript-eslint/parser": "5.40.0",
+    "better-sqlite3": "7.6.2",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "terser": "^5.15.1",
+    "tslib": "2.4.0",
+    "typescript": "4.6.4",
+    "vite": "3.1.0",
+    "vitest": "^0.24.3"
+  }
+}
